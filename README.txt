@@ -1,0 +1,1 @@
+This repo serves as a space for version control of assignments (labs and homework) for the class Computational Biology (EBIO5420) at the University of Colorado Boulder.  
