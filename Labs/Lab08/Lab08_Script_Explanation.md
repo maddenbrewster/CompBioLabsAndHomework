@@ -15,7 +15,19 @@
 
 ## Other script capabilities:  
 > * Plots the time vs. population abundance 
-> * Writes the 2 column matrix to a .csv file
+
+> Sample plot: [Logistic Growth Model Sample Plot][log_growth_plot.jpg]
+
+
+> * Writes the 2 column matrix to a .csv file  
+
+## Specific data included in this script:  
+> * r = 0.8
+> * K = 10000
+> * generations = 12 
+> * initial population = 2500  
+
+
 
 
 
