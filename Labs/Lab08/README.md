@@ -1,3 +1,0 @@
-#  <#Title#>
-
-How do i delete this off of my git repo? rm doesn't seem to work...
