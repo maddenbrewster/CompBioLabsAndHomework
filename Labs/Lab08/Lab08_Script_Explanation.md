@@ -16,7 +16,7 @@
 ## Other script capabilities:  
 > * Plots the time vs. population abundance 
 
-> Sample plot: ![Logistic Growth Model Sample Plot](log_growth_plot.jpg)
+> Sample plot: ![Logistic Growth Model Sample Plot](C:/Users/maddenbrewster/Documents//EBIO5420/CompBioLabsAndHomework/Labs/Lab08/log_growth_plot.jpg)
 
 
 > * Writes the 2 column matrix to a .csv file  
