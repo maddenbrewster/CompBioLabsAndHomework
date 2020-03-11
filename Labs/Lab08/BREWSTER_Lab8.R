@@ -28,11 +28,9 @@ log_growth_model <- function(r, K, generations, pop_initial) {
     pop_vec[i] <- pop_initial # store population abundance into ith spot in pop_vector 
     time_vec[i] <- i # store time points in vector 
   }
-  
 # c. Add code to the function so that it produces a plot of the data it 
 # generates (i.e., it should plot abundance over time).  Note that the axes 
 # should be labeled appropriately.
-  
   plot(time_vec, pop_vec, xlab = "Time (years)", ylab = "Population Abundance") # plot the time and population abundance 
   time_pop_mat <- cbind(time_vec, pop_vec) # put them into a 2 column matrix using cbind() command 
   colnames(time_pop_mat) <- c("Generation", "Population Abundance") # name the columns appropriately 
@@ -41,14 +39,17 @@ log_growth_model <- function(r, K, generations, pop_initial) {
 
 # d. Following the function, write a line(s) of code that calls the function 
 # (you choose the parameter values).
-
 log_growth_model_to_save <- log_growth_model(0.8, 10000, 12, 2500)
+
+# For part of BONUS 2
+setwd("/Documents/EBIO5420/CompBioLabsAndHomework/Labs/Lab08") # I am having a ton of trouble changing my wd here...even though using getwd() I know I'm at /Users/maddenbrewster/, I keep getting a "cannot change working directory" error.
+jpeg("log_growth_plot.jpg") # open a jpeg and name it appropriately
+plot(log_growth_model_to_save[,1],log_growth_model_to_save[,2], xlab = "Time (years)", ylab = "Population Abundance") # plot the model -- Can you do 2 returns? so I don't have to do this down here and can get it from my funciton as well 
+dev.off() # close the file 
 
 # e. Write a line(s) of code that writes the data set to a file (also in your
 # Lab08 directory).  The data file should have two columns: the first column 
 # should be "generations", and the second column should be "abundance".
-
-setwd("/Documents/EBIO5420/CompBioLabsAndHomework/Labs/Lab08") # I am having a ton of trouble changing my wd here...even though using getwd() I know I'm at /Users/maddenbrewster/, I keep getting a "cannot change working directory" error.
 write.csv(x = log_growth_model_to_save, file = "Log_Growth_Model.csv") # write the file to a csv. 
 
 
