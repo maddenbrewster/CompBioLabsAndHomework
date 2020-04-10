@@ -49,9 +49,9 @@ There are some incosistencies within the data files. For exmaple, depending on t
 For this project I will be repeating statistical analysis from the paper using programming in RStudio. 
 
 1. _View and Reformat Data_ 
-    i. Use str( ) function to understand details of the data  
-    ii. Store any size characteristics or other variables that may be important later (i.e. number of columns/rows)
-    iii. Understanding the headers will be important in later analysis (and the specific outcomes for the data)
+    1.  Use str( ) function to understand details of the data  
+    2. Store any size characteristics or other variables that may be important later (i.e. number of columns/rows)
+    3. Understanding the headers will be important in later analysis (and the specific outcomes for the data)
         * Change headers if they do not match how you will address them later in the code (be descriptive, but concise)
     iv. Remove (or build in error messages) for any columns/rows with missing data
     
