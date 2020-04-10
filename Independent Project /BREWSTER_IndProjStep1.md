@@ -87,21 +87,21 @@ For this project I will be repeating statistical analysis from the paper using p
 ## References 
 
 1.  Brewster LM, Coombs GB, Garcia VP, Hijmans JG, DeSouza NM, Stockelman KA, Barak OF, Mijacika T, Dujic Z, Greiner JJ, Phillips AA, Ainslie PN, DeSouza CA. Effects of circulating extracellular microvesicles from spinal cord injured adults on endothelial cell function. Clinical Science ( March 27, 2020). ![https://doi.org/10.1042/cs20200047]()
-2.   Chen Y, Li G, Liu M-L. Microvesicles as Emerging Biomarkers and Therapeutic Targets in Cardiometabolic Diseases. Genomics, Proteomics & Bioinformatics 16: 50–62, 2018.
-3.    Cragg JJ, Noonan VK, Krassioukov A, Borisoff J. Cardiovascular disease and spinal cord injury: Results from a national population health survey. Neurology 81: 723–728, 2013.
-4.    Cragg JJ, Stone JA, Krassioukov AV. Management of Cardiovascular Disease Risk Factors in Individuals with Chronic Spinal Cord Injury: An Evidence-Based Review. Journal of Neurotrauma 29: 1999–2012, 2012.
-5.    Ghasemi A, Zahediasl S. Normality Tests for Statistical Analysis: A Guide for Non-Statisticians. Int J Endocrinol Metab 10: 486–489, 2012.
-6.    Gimbrone MA, García-Cardeña G. Endothelial Cell Dysfunction and the Pathobiology of Atherosclerosis. Circ Res 118: 620–636, 2016.
-7.    Hadi HA, Carr CS, Al Suwaidi J. Endothelial Dysfunction: Cardiovascular Risk Factors, Therapy, and Outcome. Vasc Health Risk Manag 1: 183–198, 2005.
-8.    Hijmans JG, Stockelman KA, Garcia V, Levy MV, Brewster LM, Bammert TD, Greiner JJ, Stauffer BL, Connick E, DeSouza CA. Circulating Microparticles Are Elevated in Treated HIV‐1 Infection and Are Deleterious to Endothelial Cell Function. Journal of the American Heart Association 8, 2019.
-9.    Liu M-L, Williams KJ. Microvesicles: potential markers and mediators of endothelial dysfunction. Curr Opin Endocrinol Diabetes Obes 19: 121–127, 2012.
-10.    Lovren F, Verma S. Evolving Role of Microparticles in the Pathophysiology of Endothelial Dysfunction. Clinical Chemistry 59: 1166–1174, 2013.
-11.    Meziani F, Tesse A, Andriantsitohaina R. Microparticles are vectors of paradoxical information in vascular cells including the endothelium: role in health and diseases. Pharmacol Rep 60: 75–84, 2008.
-12.    Muralidharan-Chari V, Clancy JW, Sedgwick A, D’Souza-Schorey C. Microvesicles: mediators of extracellular communication during cancer progression. J Cell Sci 123: 1603–1611, 2010.
-13.    Phillips AA, Krassioukov AV. Contemporary Cardiovascular Concerns after Spinal Cord Injury: Mechanisms, Maladaptations, and Management. Journal of Neurotrauma 32: 1927–1942, 2015.
-14.    Rautou Pierre-Emmanuel, Vion Anne-Clémence, Amabile Nicolas, Chironi Gilles, Simon Alain, Tedgui Alain, Boulanger Chantal M., Weber Christian, Mause Sebastian. Microparticles, Vascular Function, and Atherothrombosis. Circulation Research 109: 593–606, 2011.
-15.    Rimoldi SF, Rexhaj E, Pratali L, Bailey DM, Hutter D, Faita F, Salinas Salmòn C, Villena M, Nicod P, Allemann Y, Scherrer U, Sartori C. Systemic Vascular Dysfunction in Patients With Chronic Mountain Sickness. Chest 141: 139–146, 2012.
-16.    Ståhl A, Johansson K, Mossberg M, Kahn R, Karpman D. Exosomes and microvesicles in normal physiology, pathophysiology, and renal diseases. Pediatr Nephrol 34: 11–30, 2019.
+2.   Chen Y, Li G, Liu M-L. Microvesicles as Emerging Biomarkers and Therapeutic Targets in Cardiometabolic Diseases. Genomics, Proteomics & Bioinformatics 16: 50–62, 2018. ![https://doi.org/10.1016/j.gpb.2017.03.006]()
+3.    Cragg JJ, Noonan VK, Krassioukov A, Borisoff J. Cardiovascular disease and spinal cord injury: Results from a national population health survey. Neurology 81: 723–728, 2013. ![https://doi.org/10.1097/PHM.0b013e31802f0247]()
+4.    Cragg JJ, Stone JA, Krassioukov AV. Management of Cardiovascular Disease Risk Factors in Individuals with Chronic Spinal Cord Injury: An Evidence-Based Review. Journal of Neurotrauma 29: 1999–2012, 2012. ![https://doi.org/10.1089/neu.2012.2313]()
+5.    Ghasemi A, Zahediasl S. Normality Tests for Statistical Analysis: A Guide for Non-Statisticians. Int J Endocrinol Metab 10: 486–489, 2012. ![https://doi.org/10.5812/ijem.3505]()
+6.    Gimbrone MA, García-Cardeña G. Endothelial Cell Dysfunction and the Pathobiology of Atherosclerosis. Circ Res 118: 620–636, 2016. ![https://doi.org/10.1161/CIRCRESAHA.115.306301]()
+7.    Hadi HA, Carr CS, Al Suwaidi J. Endothelial Dysfunction: Cardiovascular Risk Factors, Therapy, and Outcome. Vasc Health Risk Manag 1: 183–198, 2005. ![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1993955/]()
+8.    Hijmans JG, Stockelman KA, Garcia V, Levy MV, Brewster LM, Bammert TD, Greiner JJ, Stauffer BL, Connick E, DeSouza CA. Circulating Microparticles Are Elevated in Treated HIV‐1 Infection and Are Deleterious to Endothelial Cell Function. Journal of the American Heart Association 8, 2019. ![https://doi.org/10.1161/JAHA.118.011134]()
+9.    Liu M-L, Williams KJ. Microvesicles: potential markers and mediators of endothelial dysfunction. Curr Opin Endocrinol Diabetes Obes 19: 121–127, 2012. ![https://doi.org/10.1161/01.ATV.0000191634.13057.15]()
+10.    Lovren F, Verma S. Evolving Role of Microparticles in the Pathophysiology of Endothelial Dysfunction. Clinical Chemistry 59: 1166–1174, 2013. ![https://doi.org/10.1373/clinchem.2012.199711]()
+11.    Meziani F, Tesse A, Andriantsitohaina R. Microparticles are vectors of paradoxical information in vascular cells including the endothelium: role in health and diseases. Pharmacol Rep 60: 75–84, 2008. ![https://pubmed.ncbi.nlm.nih.gov/18276988/]()
+12.    Muralidharan-Chari V, Clancy JW, Sedgwick A, D’Souza-Schorey C. Microvesicles: mediators of extracellular communication during cancer progression. J Cell Sci 123: 1603–1611, 2010. ![https://doi.org/10.1242/jcs.064386]()
+13.    Phillips AA, Krassioukov AV. Contemporary Cardiovascular Concerns after Spinal Cord Injury: Mechanisms, Maladaptations, and Management. Journal of Neurotrauma 32: 1927–1942, 2015. ![https://doi.org/10.1089/neu.2015.3903]()
+14.    Rautou Pierre-Emmanuel, Vion Anne-Clémence, Amabile Nicolas, Chironi Gilles, Simon Alain, Tedgui Alain, Boulanger Chantal M., Weber Christian, Mause Sebastian. Microparticles, Vascular Function, and Atherothrombosis. Circulation Research 109: 593–606, 2011. ![https://doi.org/10.1161/CIRCRESAHA.110.233163]()
+15.    Rimoldi SF, Rexhaj E, Pratali L, Bailey DM, Hutter D, Faita F, Salinas Salmòn C, Villena M, Nicod P, Allemann Y, Scherrer U, Sartori C. Systemic Vascular Dysfunction in Patients With Chronic Mountain Sickness. Chest 141: 139–146, 2012. ![https://doi.org/10.1378/chest.11-0342]()
+16.    Ståhl A, Johansson K, Mossberg M, Kahn R, Karpman D. Exosomes and microvesicles in normal physiology, pathophysiology, and renal diseases. Pediatr Nephrol 34: 11–30, 2019. ![https://doi.org/10.1007/s00467-017-3816-z]()
 
 
 
