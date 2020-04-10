@@ -56,24 +56,24 @@ For this project I will be repeating statistical analysis from the paper using p
     iv. Remove (or build in error messages) for any columns/rows with missing data
     
 2. _User Input_
-    i. The goal of this section will be to allow the user, in real-time, to give input as to what data they would like to view. For example:
+    1. The goal of this section will be to allow the user, in real-time, to give input as to what data they would like to view. For example:
         * All data 
         * Just markers of inflammation, oxidative stress, etc...
         * Just protein, microRNA, cytokine markers
         * Just a single marker/outcome 
-    ii. Important things to consider: 
-    * The choices of input need to reflect the outcomes in the data, that is, they should be flexible. 
-    * Choices also need to be "idiot proof" (i.e. provide error messages if they do not choose a valid option)
-    * Will need menu list of coices based on outcomes, loops until an option given is actually chosen, and then if statements to determine what to do in the following steps. 
+    2. Important things to consider: 
+        * The choices of input need to reflect the outcomes in the data, that is, they should be flexible. 
+        * Choices also need to be "idiot proof" (i.e. provide error messages if they do not choose a valid option)
+        * Will need menu list of coices based on outcomes, loops until an option given is actually chosen, and then if statements to determine what to do in the following steps. 
     
 3. _Program Output_
-    i. Parametric testing: 
+    1. Parametric testing: 
         * Levene test 
         * P-value used with conditional statements to determine what testing should be done and what values to report 
-    ii. Appropriate Descirptive and Inferential Statistics 
+    2. Appropriate Descirptive and Inferential Statistics 
         * Normal distribution: Mean +/- SEM, ANOVA
         * Non-normal distribution: Median [IQR], Mann-Whitney U test
-    iii. Table and graph output 
+    3. Table and graph output 
         * Another opportunity for user input with graphing - Do they want dot plots or bar graphs? 
         * Tables should reflect: 
             * Testing done and associated P-values (for both normality tests and group comparisons) 
