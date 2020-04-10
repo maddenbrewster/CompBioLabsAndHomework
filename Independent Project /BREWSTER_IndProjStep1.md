@@ -28,7 +28,7 @@ Though it is not outlined in the study, statistics were performed using Statisti
 ### Type of data in this data set:  
 
 #### Format of data  
-The data are originally formatted in a .xlsx file and saved as a .csv file to perform statistics. The first line of the data is headers for each outcome of interest. Each row thereafter is the indivudal value for each outcome for a single subject. There is a column to identify which group the subject belongs to in order to compare groups later. An example of the dataset can be accessed ![here]().
+The data are originally formatted in a .xlsx file and saved as a .csv file to perform statistics. The first line of the data is headers for each outcome of interest. Each row thereafter is the indivudal value for each outcome for a single subject. There is a column to identify which group the subject belongs to in order to compare groups later. An example of the dataset can be accessed ![here](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_data.csv).
 
 #### Size of data (i.e., megabytes, lines, etc.)
 * megabytes: 
