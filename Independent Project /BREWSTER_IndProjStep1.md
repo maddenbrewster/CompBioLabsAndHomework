@@ -1,9 +1,9 @@
 # Data Manipulation and Quantitative Analysis of the Effect of Microvesicles on Endothelial Cell Function using RStudio
 ## Introduction
 
-Endothelial dysfunction is the harbinger of atherosclerosis. Extracellular microvesicles (MVs) are small outward blebbings of the plasma membrane, which contain various cargo such as RNA, proteins, and microRNAs and are released from almost all cell types in response to cellular apoptosis and/or activation. Recently, MVs have emerged as important mediators and effectors of endothelial dysfunction and the progression of atherosclerosis and cardiovascular disease (CVD). Importantly, there is a growing number of comorbidites with CVD where the mechanistic relationship is not well understood. For example, adults with human immunodeficiency virus (HIV)-1, chronic mountain sickness (CMS), and spinal cord injury (SCI) all have increased risk for the development of CVD. One study, which looked that the effect of MVs  isolated from HIV-seropositive adults on endothelial function, demonstrated that MVs might be responsible for the link between HIV-1 and cardiovascular risk. 
+Endothelial dysfunction is the harbinger of atherosclerosis.^{6, 7} Extracellular microvesicles (MVs) are small outward blebbings of the plasma membrane, which contain various cargo such as RNA, proteins, and microRNAs and are released from almost all cell types in response to cellular apoptosis and/or activation.(2, 12, 16) Recently, MVs have emerged as important mediators and effectors of endothelial dysfunction and the progression of atherosclerosis and cardiovascular disease (CVD).(2, 9, 10) Importantly, there is a growing number of comorbidities with CVD where the mechanistic relationship is not well understood. For example, adults with human immunodeficiency virus (HIV)-1, chronic mountain sickness (CMS), and spinal cord injury (SCI) all have increased risk for the development of CVD.(1, 8, 15) One study, which looked that the effect of MVs  isolated from HIV-seropositive adults on endothelial function, demonstrated that MVs might be responsible for the link between HIV-1 and increased cardiovascular risk.(8) 
 
-Parametric (normality) testing, which tests the homogeneity of a set of data, is an important precusor for the interpretation of data. The dsitribution of data effects the descriptive statistics that are published and compared as well as the inferential statistical testing performed to draw conclusions from the data. Depending on the breadth of the study, the dependent variables (outcomes of interest) can be vast. Therefore, efficient and streamlined methodologies of normality testing and the associated statistics should be employed.
+Parametric (normality) testing, which tests the homogeneity of a set of data, is an important precursor for the interpretation of data. The distribution of data effects the descriptive statistics that are published and compared as well as the inferential statistical testing performed to draw conclusions from the data.(5) Depending on the breadth of the study, the dependent variables (outcomes of interest) can be vast. Therefore, efficient and streamlined methodologies of normality testing and the associated statistics should be employed.
 
 My research explores the effects of microvesicles isolated from human populations on endothelial cell function. To determine endothelial function, we look at cellular cytokine release as well as intracellular protein and microRNA in response to MV treatment.  In the following project, I intend to use a typical set of data that my lab would use to publish in a manuscript and automate the parametric testing and the associated descriptive and inferential statistics using RStudio. As per my advisor's request, I will be using data that has already been published to test my code publicly. However, I intend to utilize data sets that are not yet in manuscript form to test the ability of my code to adapt to different data sets. 
 
@@ -15,11 +15,11 @@ My research explores the effects of microvesicles isolated from human population
 
 The original study that produced the data for this project is titled: ![_Effects of extracellular microvesicles from spinal cord-injured adults on endothelial cell function_](https://portlandpress.com/clinsci/article/134/7/777/222483/Effects-of-circulating-extracellular-microvesicles). 
 
-Spinal cord-injured (SCI) adults are at a greater risk for the development of CVD, but the mechanisms for this are not well understood. Some studies have shown that the functional phenotype of MVs is altered  based on their origin and have been implicated in the progression of CVD. It is possible that MVs from adults wirth SCI contribute to their increased cardiovascular risk. Accordingly, the aim of this study was to determine, _in vitro_, the effects of MVs from SCI adults on endothelial cell inflammation, oxidative stress, nitric oxide (NO) production and tissue-type plasminogen activator (t-PA) expression. 
+Spinal cord-injured (SCI) adults are at a greater risk for the development of CVD, but the mechanisms for this are not well understood.(3, 4, 13) Some studies have shown that the functional phenotype of MVs is altered based on their origin and have been implicated in the progression of CVD.(11, 14) It is possible that MVs from adults with SCI contribute to their increased cardiovascular risk. Accordingly, the aim of this study was to determine, _in vitro_, the effects of MVs from SCI adults on endothelial cell inflammation, oxidative stress, nitric oxide (NO) production and tissue-type plasminogen activator (t-PA) expression.
 
 ### Brief description of methodology that produced the data
 
-Whole venous blood was collected from SCI and healthy adults and subsequentlly centirfuged to isolate plasma. A portion of the plasma was taken to measure circulating markers of inflammation and oxidative stress by enzymne linked immunoassay (ELISA). The remaining plasma was then ultracentrifuged amnd resuspended in cell culture media to isolate MVs. Human umbilical vein endothelial cells (HUVECs) were cultured and serially passaged to the 3rd passage where experimentatin occured. HUVECs were treated with MVs isolated from the SCI or healthy adults at equal cncentrations for 24 hours. Thereafter, supernatant was collected to analyze the cellular release of IL-6, IL-8, TNF-alpha, and t-PA via ELISA. Adiditonally, supernatant was used to assess NO production using a commercially available total NO and Nitrate/Nitrite Parameter Assay. Intracellular protein was isolated using RIPA buffer and sonicaiton and total protein concentration was determined using the Bio-Rad DC protein assay. Therafter, specific intracellular protein markers (NF-kB p65, pNF-kB p65, p-eNOS Ser1177, p-eNOS Ser633, p-eNOS Thr495, SOD1, catalase, and t-PA) were measured using capillary electrophoresis immunoassay. Intracellular microRNA (miRNA) were determined by first isolating RNA from cells, reverse transcribing RNA into cDNA, and RT-PCR performed with specific primers of interest: miR-21, miR-126, miR-146a, miR-181b, miR-200c, and U6. Finally the produictive of reactive oxygen species was assessed using CellRox DeepRed reagent and measured with GEMINI EM microplate reader after 3 hours of MV treatment on HUVECs. 
+Whole venous blood was collected from SCI and healthy adults and subsequently centrifuged to isolate plasma. A portion of the plasma was taken to measure circulating markers of inflammation and oxidative stress by enzyme linked immunoassay (ELISA). The remaining plasma was then ultracentrifuged and resuspended in cell culture media to isolate MVs. Human umbilical vein endothelial cells (HUVECs) were cultured and serially passaged to the 3rd passage where experimentation occurred. HUVECs were treated with MVs isolated from the SCI or healthy adults at equal concentrations for 24 hours. Thereafter, supernatant was collected to analyze the cellular release of IL-6, IL-8, TNF-alpha, and t-PA via ELISA. Additionally, supernatant was used to assess NO production using a commercially available total NO and Nitrate/Nitrite Parameter Assay. Intracellular protein was isolated using RIPA buffer and sonication and total protein concentration was determined using the Bio-Rad DC protein assay. Thereafter, specific intracellular protein markers (NF-kB p65, p-NF-kB p65, p-eNOS Ser1177, p-eNOS Ser633, p-eNOS Thr495, SOD1, catalase, and t-PA) were measured using capillary electrophoresis immunoassay. Intracellular microRNA (miRNA) were determined by first isolating RNA from cells, reverse transcribing RNA into cDNA, and RT-PCR performed with specific primers of interest: miR-21, miR-126, miR-146a, miR-181b, miR-200c, and U6. Finally, the productive of reactive oxygen species was assessed using CellRox Deep Red reagent and measured with GEMINI EM microplate reader after 3 hours of MV treatment on HUVECs(1) 
 
 Though it is not outlined in the study, statistics were performed using Statistica and StatView applicaitons (no programming or coding was involved). The details of the statistical tests performed are detailed below: 
 
@@ -82,24 +82,30 @@ For this project I will be repeating statistical analysis from the paper using p
                 * This will make it easy to copy and paste right into manuscript. 
 
 
-        
-    
-    
-    
-
-
-
-
-
 <hr>
 
 ## References 
 
-Please include working hyperlinks to original sources.  Here is an example format:
+1.     Brewster LM, Coombs GB, Garcia VP, Hijmans JG, DeSouza NM, Stockelman KA, Barak OF, Mijacika T, Dujic Z, Greiner JJ, Phillips AA, Ainslie PN, DeSouza CA. Effects of circulating extracellular microvesicles from spinal cord injured adults on endothelial cell function. Clinical Science ( March 27, 2020). doi: 10.1042/CS20200047.
+2.     Chen Y, Li G, Liu M-L. Microvesicles as Emerging Biomarkers and Therapeutic Targets in Cardiometabolic Diseases. Genomics, Proteomics & Bioinformatics 16: 50–62, 2018.
+3.     Cragg JJ, Noonan VK, Krassioukov A, Borisoff J. Cardiovascular disease and spinal cord injury: Results from a national population health survey. Neurology 81: 723–728, 2013.
+4.     Cragg JJ, Stone JA, Krassioukov AV. Management of Cardiovascular Disease Risk Factors in Individuals with Chronic Spinal Cord Injury: An Evidence-Based Review. Journal of Neurotrauma 29: 1999–2012, 2012.
+5.     Ghasemi A, Zahediasl S. Normality Tests for Statistical Analysis: A Guide for Non-Statisticians. Int J Endocrinol Metab 10: 486–489, 2012.
+6.     Gimbrone MA, García-Cardeña G. Endothelial Cell Dysfunction and the Pathobiology of Atherosclerosis. Circ Res 118: 620–636, 2016.
+7.     Hadi HA, Carr CS, Al Suwaidi J. Endothelial Dysfunction: Cardiovascular Risk Factors, Therapy, and Outcome. Vasc Health Risk Manag 1: 183–198, 2005.
+8.     Hijmans JG, Stockelman KA, Garcia V, Levy MV, Brewster LM, Bammert TD, Greiner JJ, Stauffer BL, Connick E, DeSouza CA. Circulating Microparticles Are Elevated in Treated HIV‐1 Infection and Are Deleterious to Endothelial Cell Function. Journal of the American Heart Association 8, 2019.
+9.     Liu M-L, Williams KJ. Microvesicles: potential markers and mediators of endothelial dysfunction. Curr Opin Endocrinol Diabetes Obes 19: 121–127, 2012.
+10.     Lovren F, Verma S. Evolving Role of Microparticles in the Pathophysiology of Endothelial Dysfunction. Clinical Chemistry 59: 1166–1174, 2013.
+11.     Meziani F, Tesse A, Andriantsitohaina R. Microparticles are vectors of paradoxical information in vascular cells including the endothelium: role in health and diseases. Pharmacol Rep 60: 75–84, 2008.
+12.     Muralidharan-Chari V, Clancy JW, Sedgwick A, D’Souza-Schorey C. Microvesicles: mediators of extracellular communication during cancer progression. J Cell Sci 123: 1603–1611, 2010.
+13.     Phillips AA, Krassioukov AV. Contemporary Cardiovascular Concerns after Spinal Cord Injury: Mechanisms, Maladaptations, and Management. Journal of Neurotrauma 32: 1927–1942, 2015.
+14.     Rautou Pierre-Emmanuel, Vion Anne-Clémence, Amabile Nicolas, Chironi Gilles, Simon Alain, Tedgui Alain, Boulanger Chantal M., Weber Christian, Mause Sebastian. Microparticles, Vascular Function, and Atherothrombosis. Circulation Research 109: 593–606, 2011.
+15.     Rimoldi SF, Rexhaj E, Pratali L, Bailey DM, Hutter D, Faita F, Salinas Salmòn C, Villena M, Nicod P, Allemann Y, Scherrer U, Sartori C. Systemic Vascular Dysfunction in Patients With Chronic Mountain Sickness. Chest 141: 139–146, 2012.
+16.     Ståhl A, Johansson K, Mossberg M, Kahn R, Karpman D. Exosomes and microvesicles in normal physiology, pathophysiology, and renal diseases. Pediatr Nephrol 34: 11–30, 2019.
 
-Cusack JJ, Dickman AJ, Rowcliffe JM, Carbone C, Macdonald DW, Coulson T (2015) Random versus game trail-based camera trap placement strategy for monitoring terrestrial mammal communities. PLOS ONE 10(5): e0126373. [https://doi.org/10.1371/journal.pone.0126373](https://doi.org/10.1371/journal.pone.0126373)
 
-Cusack JJ, Dickman AJ, Rowcliffe JM, Carbone C, Macdonald DW, Coulson T (2015) Data from: Random versus game trail-based camera trap placement strategy for monitoring terrestrial mammal communities. Dryad Digital Repository. [https://doi.org/10.5061/dryad.br86d](https://doi.org/10.5061/dryad.br86d)
+
+
 
 
 
