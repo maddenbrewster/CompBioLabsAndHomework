@@ -30,7 +30,7 @@ Though it is not outlined in the study, statistics were performed using Statisti
 #### Format of data  
 The data are originally formatted in a .xlsx file and saved as a .csv file to perform statistics. The first line of the data is headers for each outcome of interest. Each row thereafter is the indivudal value for each outcome for a single subject. There is a column to identify which group the subject belongs to in order to compare groups later. An example of the dataset can be accessed ![here](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_data.csv).
 
-Addtionally, please view the ![SCI_README.csv](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_README.md) file in order to understand and interpret the specific outcomes in this dataset. 
+Addtionally, please view the ![SCI_README](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_README.md) file in order to understand and interpret the specific outcomes in this dataset. 
 
 #### Size of data (i.e., megabytes, lines, etc.)
 * Kilobytes: 4 KB
