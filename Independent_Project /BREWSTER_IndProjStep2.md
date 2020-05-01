@@ -78,6 +78,26 @@ Overall, this project took a lot more time and effort than I anticipated. I thou
 
 My code _did_ acocmplish my primary aim, which was to perform the statistical analyses and graphical output in a typical dataset that my research produces using RStudio/programming methods. As it functions now, my code produces saved PDF files of the ![graphs](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_bar_graph.pdf) the user wants, as well as ![summary tables](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/Plasma.TNF_summary_table.csv) saved as .csv files for the user's data of interest. Additionally, I was able to give the user some autonomy to how they would like to view they data by using the readline( ) function in R. Finally, I was able to print summary statements for each variable to the R Console, which would be incredibly helpful to put values into a manuscripts with ease. Despite the actual formulation of the code taking quite a bit of time, this automated process was _infinitely_ faster than the original methodology employed by the authors. Overall, I found that my results (i.e. reported statistics) were the same to that published in the article,* which was the intention of this project. In total these data indicate that microvesicles from adults with spinal cord injury result in blunted eNOS activation, NO bioavailability, and t-PA production, which likely contributes to their increased cardiovascular risk. 
 
+Examples of the outputs produced: 
+* If the user wanted to view ![all the data as bar graphs](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_bar_graph.pdf): 
+
+* If the user wanted to view ![all the data as dot plots](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_dot_plot.pdf): 
+
+* If the user wanted to view the data for the biomarker ![Plasma TNF as a bar graph](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_Plasma.TNF_bar_graph.pdf):
+
+* ![Summary table](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/Plasma.TNF_summary_table.csv) output for the biomarker Plasma TNF:
+
+* Some examples of print out of summary statements: 
+    * [1] "eNOS: (mean±SEM: 87±1.6 vs 85.4±4.3)"
+    * [1] "peNOS..214.: (mean±SEM: 7.1±0.8 vs 13.4±0.8)"
+    * [1] "eNOS.Ratio: (mean±SEM: 0.1±0 vs 0.2±0)"
+    * [1] "t.PA: (mean±SEM: 35.5±1.9 vs 49.7±1.4)"
+    * [1] "C3: (mean±SEM: 114.5±1.3 vs 115.8±2)"
+    * [1] "CC3: (mean±SEM: 63.3±3.4 vs 68.9±4.4)"
+    * [1] "p21: (median[IQR]: 27.5[22.1,33.5] vs 29.4[24.4,31.5])"
+    * [1] "p38: (mean±SEM: 112.9±2.6 vs 108.1±2.3)"
+    * [1] "HSP70: (median[IQR]: 59.8[51.2,71.6] vs 69.6[68.1,73.6])"
+
 There are obviously some major limitaitons in my code. As of today, I am unsure as to how "flexible" my code is with other similar datasets. As I continue to work on it, I would like to check that it functions  in a similar manner to the sample dataset used for this project. Additionally, I would like to input a lot more error checking in order to accomplish the translational nature of the code between datasets. For example, my code assumes that the 1st two columns of the data set are character categories giving the "Group" and "Subject" names. While this is the case for almost all datasets that I produce, it would still be good to put in checks to ensure this, especially since some indexing starts at 3 for this reason. There are also points in the code where I repeat some of the same functions (i.e. graphing, while loops for user input, etc), I should probably go back and re-write these chunks as my own functions to streamline the code. Further, there are points where I use loops when logical indexing or other techniques could be used, but I just wrote what first came to mind. Bottom line: there is a lot of cleaning up I can do with my code. 
 
 If I were to re-do this project, I probably would have approached it a little differently. Most importantly, I would have spent _a lot_ more time on the pseudocode and planning. There are several reasons for this, but primarily, I think my code would have been cleaner all around. I would have ultimately spent less time cutting and pasting and rewriting chunks of code as functions and jumping around from section to section if I just had a clearer plan to start off. The interesting challenge of this project was not that I did not know how to do everything I needed to do - I had all the tools - I just did not know how to combine them in a clear and concise way.  
