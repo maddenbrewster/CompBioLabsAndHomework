@@ -1,11 +1,13 @@
 
 # Data Manipulation and Quantitative Analysis of the Effect of Microvesicles on Endothelial Cell Function using RStudio
 
+
 ### Biological question
 
 The primary aim of this project is to use coding/programming methods in RStudio to streamline statistical ananlysis and  graphical output in a typical dataset that my research produces. As a whole, these ananlyses will be used to determine the role of extracellular microvesicels on endothelial cell function. 
 
-### Context (introduction) -- need to ADAPT!!
+
+### Context (introduction)
 
 _The effect of microvesicles on endothelial function and the progression of cardiocascular disease -_ Endothelial dysfunction is the harbinger of atherosclerosis (6, 7). Extracellular microvesicles (MVs) are small outward blebbings of the plasma membrane, which contain various cargo such as RNA, proteins, and microRNAs and are released from almost all cell types in response to cellular apoptosis and/or activation (2, 12, 16). Recently, MVs have emerged as important mediators and effectors of endothelial dysfunction and the progression of atherosclerosis and cardiovascular disease (CVD) (2, 9, 10). There are a growing number of diseases and conditions that are tied to increased cardiovascular risk, however, the mechanistic relations between these comorbidities are not well understood. For example, adults with human immunodeficiency virus (HIV)-1, chronic mountain sickness (CMS), and spinal cord injury (SCI) all have increased risk for the development of CVD (1, 8, 15). One study, which looked that the effect of MVs  isolated from HIV-1-seropositive adults on endothelial function, demonstrated that MVs might be responsible for the link between HIV-1 and increased cardiovascular risk (8). 
 
@@ -15,6 +17,7 @@ _The fundamental goal of my research in general_ My research explores the effect
 
 
 ### Methods
+
 ##### The source of the data:
 The original study that produced the data to use as a sample dataset for this project is titled: ![_Effects of extracellular microvesicles from spinal cord-injured adults on endothelial cell function_](https://portlandpress.com/clinsci/article/134/7/777/222483/Effects-of-circulating-extracellular-microvesicles). 
 
@@ -24,14 +27,14 @@ Whole venous blood was collected from SCI and healthy adults and subsequently ce
 
 
 ###### Format of the Data 
-The data are originally formatted in a .xlsx file and saved as a .csv file to perform statistics. The first line of the data is headers for each outcome of interest. Each row thereafter is the indivudal value for each outcome for a single subject (i.e. the data is in wide format). There is a column to identify which group the subject belongs to in order to compare groups later. An example of the dataset can be accessed ![here](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_data.csv).
+The data are originally formatted in a .xlsx file and saved as a .csv file to perform statistics. The first line of the data is headers for each outcome of interest. Each row thereafter is the indivudal value for each outcome for a single subject (i.e. the data is in wide format). There is a column to identify which group the subject belongs to in order to compare groups later. An example of the dataset can be accessed ![here](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_data.csv).
 
-Addtionally, please view the ![SCI_README](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent%20Project%20/SCI_README.md) file in order to understand and interpret the specific outcomes in this dataset. 
+Addtionally, please view the ![SCI_README](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_README.md) file in order to understand and interpret the specific outcomes in this dataset. 
 
 ###### Size of data (i.e., megabytes, lines, etc.)
-* Kilobytes: 4 KB
+* Kilobytes: 5 KB
 * Lines:  20
-* Columns: 30 
+* Columns: 36 
 
 _NOTE: These parameters will change depending on the dataset I am working with, the dataset used in this specific example contians the size of the data used to publish the original study. Code will be written to accomodate various sized data._
 
@@ -40,51 +43,44 @@ Though it is not outlined in the study, statistics were performed using Statisti
 
 >"The distribution of the data was assessed by the Shapiro–Wilk test and the homogeneity of variances by the Levene test. Group differences in subject characteristics, circulating inflammation and oxidative stress markers, cellular pro- tein miRNA expression as well as cellular oxidative stress were determined by either analysis of variance (normally distributed data) or Mann–Whitney U test (non-normally distributed data). Data are presented as mean +/− SEM for normally distributed variables and as the median (interquartile range) for non-normally distributed variables. Pear- son correlations were determined between variables of interest. Statistical significance was set a priori at P<0.05." (1) 
 
-For normality testing, a statsitcis software program called Statistica was used. Importantly, Statistica can only be run on a Windows Operating System. Additionally, the testing for each dependent variable is run one at a time and then manually entered into a separate Excel sheet (set-up by the user). This renders the resulting data, which will be used for other statistical testing and reported statistics to be prone to human error. 
+For normality testing, a statsitcis software program called Statistica was used. Importantly, Statistica can only be run on a Windows PC. Additionally, the testing for each dependent variable is run one at a time and then manually entered into a separate Excel sheet (set-up by the user). This renders the resulting data, which will be used for other statistical testing and reported statistics to be highly prone to human error. 
 
-For inferential statistics testing, an old statistics software program called StatView. First, a dataset in Excel must be saved as a "1997-2004 .xls" file. Importantly, this renders the file unable to be opened on newer versions of Excel and may modify formatting of the the original dataset. The .xls file must then be opened on a specific single computer and opened with an older donwloaded version of Excel (version 11.5.3). Once the .xls is opened, it must be saved as a "Worksheet 4.0." The dataset is now ready to be opened in the StatView application where statistics can be run one dependent variable at a time.  
+For inferential statistics testing, an old statistics software program called StatView was used. First, a dataset in Excel must be saved as a "1997-2004 .xls" file. Importantly, this renders the file unable to be opened on newer versions of Excel and may modify formatting of the the original dataset. The .xls file must then be opened on a specific single computer and opened with an older donwloaded version of Excel (version 11.5.3). Once the .xls is opened, it must be saved as a "Worksheet 4.0." The dataset is now ready to be opened in the StatView application where statistics can be run one dependent variable at a time.  
 
-##### My approach and methodology for data analysis:
-
-1. The first thing I did was write out comments in my RScript of what the different components of the final goal for my code was. 
+###### My approach and methodology for data analysis:
+1. The first thing I did was write out comments in my RScript of what the different components of the final goal for my code was: 
 
     e.g.
-    
     - #Download data set 
-    
     - #Remove missing data and any other data "debris"
-    
     - #Do statistics 
-    
     - #Make output: table, graph, summary statement
 
-2. Writing functions and other small coding chunks that would do the bulk of the work (i.e. building the table, creating the graphs, performing testing and descriptive statistics)
+2. Writing functions and other small coding chunks that would do the bulk of the work (i.e. building the table, creating the graphs, performing testing and descriptive statistics):
 
     e.g. 
-    
     - User input functions: asking user for what data they want to analyze and how they wanted the data graphed 
-    
-    - Table functions: built skeleton of table (preallocation) and function to acutally put all the correct values into the table
-    
-    - Statistics functions: normality testing, categorical determinations, interential statistics and descriptive statistics all to eventually fill the table, make summary statements, or generate graphs
+    - Table functions: build skeleton of table (preallocation) and function to acutally put all the correct values into the table
+    - Statistics functions: normality testing, categorical determinations, interential statistics and descriptive statistics all to eventually fill the table, make summary statements and generate graphs
 
 3. Next I decided to put in user input and if statements and implement it in  a "main" code section that started to call on my functions created above. 
 
-4. Adapt. Adapt. Adapt. Based on what arguments my functions took, I sometimes had to reformat data/change the functions themselves, etc. finally, making sure I changed any "magic numbers" to flexible code. 
+4. Adapt. Adapt. Adapt. Based on what arguments my functions took, I sometimes had to reformat data/change the functions themselves.
 
 6. Error checks. I put in several "error" checks - mostly having to so with user input that was incompatible with my code and the options they were given.
 
 7. Try with another dataset...To be continued. 
 
+
 ### Results and conclusions
 
-Overall, this project took a lot more time and effort than I anticipated. I thought that it would be relatviely easy to format the data and run relatively simple statistics, but I kept coming up with more ideas and more errors and more rabbit holes that took _time_! Bottom line, this is still a work in progress. For the purpose of this project, I wanted to turn in working code and have it accomplish most of my goals, but there are still major limitations as outlined below. 
+Overall, this project took a lot more time and effort than I anticipated. I thought that it would be relatviely easy to format the data and run relatively simple statistics, but I kept coming up with more ideas and more errors and more rabbit holes that took _time_! Bottom line: this is still a work in progress. For the purpose of this project, I wanted to turn in working code and have it accomplish most of my goals, but there are still major limitations as outlined below. 
 
-My code _did_ acocmplish my primary aim, which was to perform the statistical analyses and graphical output in a typical dataset that my research produces using RStudio/programming methods. As it functions now, my code produces saved PDF files of the ![graphs](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_bar_graph.pdf) the user wants, as well as ![summary tables](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/Plasma.TNF_summary_table.csv) saved as .csv files for the data of interest. Additionally, I was able to give the user some autonomy to how they would like to view they data by using the readline( ) function in R. Finally, I was able to print summary statements for each variable to the R Console, which would be incredibly helpful to put values into a manuscript with ease. Despite the wirritng of the code taking quite a bit of time, this automated process was _infinitely_ faster than the original methodology emploed by the authors. Overall, I found that my resulsts were the same to that published in the article,* which was the intention of this project. That is, microvesicles from adults with spinal cord injury result in blunted eNOS activation, NO bioavailability, and t-PA production, which likely contirbutes to their increased cardiovascular risk. 
+My code _did_ acocmplish my primary aim, which was to perform the statistical analyses and graphical output in a typical dataset that my research produces using RStudio/programming methods. As it functions now, my code produces saved PDF files of the ![graphs](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_bar_graph.pdf) the user wants, as well as ![summary tables](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/Plasma.TNF_summary_table.csv) saved as .csv files for the user's data of interest. Additionally, I was able to give the user some autonomy to how they would like to view they data by using the readline( ) function in R. Finally, I was able to print summary statements for each variable to the R Console, which would be incredibly helpful to put values into a manuscripts with ease. Despite the actual formulation of the code taking quite a bit of time, this automated process was _infinitely_ faster than the original methodology employed by the authors. Overall, I found that my results (i.e. reported statistics) were the same to that published in the article,* which was the intention of this project. In total these data indicate that microvesicles from adults with spinal cord injury result in blunted eNOS activation, NO bioavailability, and t-PA production, which likely contributes to their increased cardiovascular risk. 
 
-There are obviously some limitaitons in my code. As of today, I am unsure how "flexible" my code is with other similar datasets. As I continue to work with it, I would like to check that it functions  in a simiular manner to the sample dataset used for this project. Additionally, I would like to input a lot more error checking in order to accomplish the translational nature of the code between datasets. For example, my code assumes that the 1st two columns of the data set are character categories giving the Group and Subject names. While this is the case for almost all datasets I produce, it would still be good to put in checks to ensure this, especially since some indexing starts at 3 for this reason. There are also points in the code where I repeat some of the same functions (i.e. graphing, while loops for user input, etc), I should probably go back and re-write these chunks as my own functions to streamline the code. Further, there are points where I use loops when logical indexing or other techniques could be used, but I just wrote what first came to mind. Bottom line, there is a lot of cleaning up I can do with my code. 
+There are obviously some major limitaitons in my code. As of today, I am unsure as to how "flexible" my code is with other similar datasets. As I continue to work on it, I would like to check that it functions  in a similar manner to the sample dataset used for this project. Additionally, I would like to input a lot more error checking in order to accomplish the translational nature of the code between datasets. For example, my code assumes that the 1st two columns of the data set are character categories giving the "Group" and "Subject" names. While this is the case for almost all datasets that I produce, it would still be good to put in checks to ensure this, especially since some indexing starts at 3 for this reason. There are also points in the code where I repeat some of the same functions (i.e. graphing, while loops for user input, etc), I should probably go back and re-write these chunks as my own functions to streamline the code. Further, there are points where I use loops when logical indexing or other techniques could be used, but I just wrote what first came to mind. Bottom line: there is a lot of cleaning up I can do with my code. 
 
-If I were to re-do this project, I probably would have approached it a little differently in that I would have spent a _lot_ more time on the pseudocode and planning. There are several reasons for this, but primarily, I think my code would have been cleaner all around. I would have ultimately spent less time cutting and pasting and rewriting chunks of code as functions and jumping around from section to section if I just had a clearer plan. The interesting challenge of this project was not that I didn't know how to do everything I needed to do - I had all the tools - I just didn't know how to combine them in a clear and concise way.  
+If I were to re-do this project, I probably would have approached it a little differently. Most importantly, I would have spent _a lot_ more time on the pseudocode and planning. There are several reasons for this, but primarily, I think my code would have been cleaner all around. I would have ultimately spent less time cutting and pasting and rewriting chunks of code as functions and jumping around from section to section if I just had a clearer plan to start off. The interesting challenge of this project was not that I did not know how to do everything I needed to do - I had all the tools - I just did not know how to combine them in a clear and concise way.  
 
 *_Disclaimer_: I did not check every single number I created in my code with the numbers published in the paper, but that is something I want to do in order to fully check my code for bugs. 
 
