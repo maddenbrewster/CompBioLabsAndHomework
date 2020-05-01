@@ -47,17 +47,26 @@ For inferential statistics testing, an old statistics software program called St
 ##### My approach and methodology for data analysis:
 
 1. The first thing I did was write out comments in my RScript of what the different components of the final goal for my code was. 
- > e.g. 
- > #Download data set 
- > #Remove missing data and any other data "debris"
- > #Do statistics 
- > #Make output: table, graph, summary statement
+
+    e.g.
+    
+    - #Download data set 
+    
+    - #Remove missing data and any other data "debris"
+    
+    - #Do statistics 
+    
+    - #Make output: table, graph, summary statement
 
 2. Writing functions and other small coding chunks that would do the bulk of the work (i.e. building the table, creating the graphs, performing testing and descriptive statistics)
-> e.g. 
-> User input functions: asking user for what data they want to analyze and how they wanted the data graphed 
-> Table functions: built skeleton of table (preallocation) and function to acutally put all the correct values into the table 
-> Statistics functions: normality testing, categorical determinations, interential statistics and descriptive statistics all to eventuall fill the table, make summary statements, or generate graphs
+
+    e.g. 
+    
+    - User input functions: asking user for what data they want to analyze and how they wanted the data graphed 
+    
+    - Table functions: built skeleton of table (preallocation) and function to acutally put all the correct values into the table
+    
+    - Statistics functions: normality testing, categorical determinations, interential statistics and descriptive statistics all to eventually fill the table, make summary statements, or generate graphs
 
 3. Next I decided to put in user input and if statements and implement it in  a "main" code section that started to call on my functions created above. 
 
@@ -71,7 +80,7 @@ For inferential statistics testing, an old statistics software program called St
 
 Overall, this project took a lot more time and effort than I anticipated. I thought that it would be relatviely easy to format the data and run relatively simple statistics, but I kept coming up with more ideas and more errors and more rabbit holes that took _time_! Bottom line, this is still a work in progress. For the purpose of this project, I wanted to turn in working code and have it accomplish most of my goals, but there are still major limitations as outlined below. 
 
-My code _did_ acocmplish my primary aim, which was to perform the statistical analyses and graphical output in a typical dataset that my research produces using RStudio/programming methods. As it functions now, my code produces saved PDF files of the ![graphs](kj) the user wants, as well as ![summary tables]( ddd) saved as .csv files for the data of interest. Additionally, I was able to give the user some autonomy to how they would like to view they data by using the readline( ) function in R. Finally, I was able to print summary statements for each variable to the R Console, which would be incredibly helpful to put values into a manuscript with ease. Despite the wirritng of the code taking quite a bit of time, this automated process was _infinitely_ faster than the original methodology emploed by the authors. Overall, I found that my resulsts were the same to that published in the article,* which was the intention of this project. That is, microvesicles from adults with spinal cord injury result in blunted eNOS activation, NO bioavailability, and t-PA production, which likely contirbutes to their increased cardiovascular risk. 
+My code _did_ acocmplish my primary aim, which was to perform the statistical analyses and graphical output in a typical dataset that my research produces using RStudio/programming methods. As it functions now, my code produces saved PDF files of the ![graphs](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/SCI_MVs_all_data_bar_graph.pdf) the user wants, as well as ![summary tables](https://github.com/maddenbrewster/CompBioLabsAndHomework/blob/master/Independent_Project%20/Plasma.TNF_summary_table.csv) saved as .csv files for the data of interest. Additionally, I was able to give the user some autonomy to how they would like to view they data by using the readline( ) function in R. Finally, I was able to print summary statements for each variable to the R Console, which would be incredibly helpful to put values into a manuscript with ease. Despite the wirritng of the code taking quite a bit of time, this automated process was _infinitely_ faster than the original methodology emploed by the authors. Overall, I found that my resulsts were the same to that published in the article,* which was the intention of this project. That is, microvesicles from adults with spinal cord injury result in blunted eNOS activation, NO bioavailability, and t-PA production, which likely contirbutes to their increased cardiovascular risk. 
 
 There are obviously some limitaitons in my code. As of today, I am unsure how "flexible" my code is with other similar datasets. As I continue to work with it, I would like to check that it functions  in a simiular manner to the sample dataset used for this project. Additionally, I would like to input a lot more error checking in order to accomplish the translational nature of the code between datasets. For example, my code assumes that the 1st two columns of the data set are character categories giving the Group and Subject names. While this is the case for almost all datasets I produce, it would still be good to put in checks to ensure this, especially since some indexing starts at 3 for this reason. There are also points in the code where I repeat some of the same functions (i.e. graphing, while loops for user input, etc), I should probably go back and re-write these chunks as my own functions to streamline the code. Further, there are points where I use loops when logical indexing or other techniques could be used, but I just wrote what first came to mind. Bottom line, there is a lot of cleaning up I can do with my code. 
 
