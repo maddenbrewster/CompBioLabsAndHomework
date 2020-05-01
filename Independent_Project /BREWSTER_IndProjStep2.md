@@ -4,7 +4,7 @@
 
 ### Biological question
 
-The primary aim of this project is to use coding/programming methods in RStudio to streamline statistical ananlysis and  graphical output in a typical dataset that my research produces. As a whole, these ananlyses will be used to determine the role of extracellular microvesicels on endothelial cell function. 
+The primary aim of this project is to use coding/programming methods in RStudio to streamline statistical analysis and  graphical output of a typical dataset that my research produces. As a whole, these analyses will be used to determine the role of extracellular microvesicles on endothelial cell function. 
 
 
 ### Context (introduction)
@@ -39,11 +39,11 @@ Addtionally, please view the ![SCI_README](https://github.com/maddenbrewster/Com
 _NOTE: These parameters will change depending on the dataset I am working with, the dataset used in this specific example contians the size of the data used to publish the original study. Code will be written to accomodate various sized data._
 
 ###### Original authors approach and methodology for data analysis: 
-Though it is not outlined in the study, statistics were performed using Statistica and StatView applicaitons (no programming or coding was involved). The details of the statistical tests performed are detailed below: 
+Though it is not outlined in the study, statistics were performed using Statistica and StatView applications (no programming or coding was involved). The details of the statistical tests performed are detailed below: 
 
 >"The distribution of the data was assessed by the Shapiro–Wilk test and the homogeneity of variances by the Levene test. Group differences in subject characteristics, circulating inflammation and oxidative stress markers, cellular pro- tein miRNA expression as well as cellular oxidative stress were determined by either analysis of variance (normally distributed data) or Mann–Whitney U test (non-normally distributed data). Data are presented as mean +/− SEM for normally distributed variables and as the median (interquartile range) for non-normally distributed variables. Pear- son correlations were determined between variables of interest. Statistical significance was set a priori at P<0.05." (1) 
 
-For normality testing, a statsitcis software program called Statistica was used. Importantly, Statistica can only be run on a Windows PC. Additionally, the testing for each dependent variable is run one at a time and then manually entered into a separate Excel sheet (set-up by the user). This renders the resulting data, which will be used for other statistical testing and reported statistics to be highly prone to human error. 
+For normality testing, a statistics software program called Statistica was used. Importantly, Statistica can only be run on a Windows PC. Additionally, the testing for each dependent variable is run one at a time and then manually entered into a separate Excel sheet (set-up by the user). This renders the resulting data, which will be used for other statistical testing and reported statistics to be highly prone to human error. 
 
 For inferential statistics testing, an old statistics software program called StatView was used. First, a dataset in Excel must be saved as a "1997-2004 .xls" file. Importantly, this renders the file unable to be opened on newer versions of Excel and may modify formatting of the the original dataset. The .xls file must then be opened on a specific single computer and opened with an older donwloaded version of Excel (version 11.5.3). Once the .xls is opened, it must be saved as a "Worksheet 4.0." The dataset is now ready to be opened in the StatView application where statistics can be run one dependent variable at a time.  
 
